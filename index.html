@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Página Inicial</title>
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="./index.html">Inicio</a></h1>
+        </header>
+
+        <h1>Lista de Estudantes</h1>
+        <form action="">
+            <input type="text" placeholder="nome, matrícula ou código">
+            <input type="submit" id="pesquisar" value="pesquisar">
+            <br>
+            <!-- Filtros -->
+            <input type="radio" name="searchfilter" value="all" checked>Tudo
+            <input type="radio" name="searchfilter" value="cod" checked>Código
+            <input type="radio" name="searchfilter" value="mat" checked>Matricula
+            <input type="radio" name="searchfilter" value="name" checked>Nome
+            
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Matrícula</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01145</td>
+                    <td>21534648787</td>
+                    <td>Antonio Evandro</td>
+                    <td>antonioevandro@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer >
+            <p>© Antonio Evandro 2022, <a href="#">Antonio Evandro</a>.</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
