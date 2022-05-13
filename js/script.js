@@ -19,11 +19,12 @@ search.onclick = function(e){
     e.preventDefault()
 
     let searchString = document.querySelector("#searchString").value
-    let filterType = document.querySelector("imput[name='searchfilter']:checked").value;
+    let filterType = document.querySelector("input[name='searchfilter']:checked").value
 
     //alert(filterType + "-" + searchString);
     if(filterType === "all") alert("Busca geralpor" + searchString)
-    else if (filterType === "cod") alert("Busca pelo codigo" + searchString)
-    else if (filterType === "mat") alert("Busca por matrícula" + searchString)
-    
+    else if (filterType === "cod") alert("Busca pelo codigo por" + searchString)
+    else if (filterType === "mat") alert("Busca por matrícula por" + searchString)
+    else alert("Busca pelo nome por" + searchString)
+
 }
